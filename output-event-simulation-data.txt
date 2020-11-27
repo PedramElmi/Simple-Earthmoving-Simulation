@@ -1,13 +1,13 @@
 ********************************************************************************
-2020-11-27 15:15 Iran Standard Time
+2020-11-27 16:02 Iran Standard Time
 Event logs of the program from main.py
 --------------------------------------------------------------------------------
 One loader machine is being created.
 Created truck's list:
 0 Truck ID=0: Status=initiating new cycle, Loading duration= 10, Hauling duration= 20, Dumping duration= 7, Returning duration= 15
-1 Truck ID=1: Status=initiating new cycle, Loading duration= 15, Hauling duration= 30, Dumping duration= 9, Returning duration= 10
-2 Truck ID=2: Status=initiating new cycle, Loading duration= 9, Hauling duration= 15, Dumping duration= 11, Returning duration= 5
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ 1 Truck ID=1: Status=initiating new cycle, Loading duration= 15, Hauling duration= 30, Dumping duration= 9, Returning duration= 10
+ 2 Truck ID=2: Status=initiating new cycle, Loading duration= 9, Hauling duration= 15, Dumping duration= 11, Returning duration= 5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 0
 The loader is or will be available at time 0
 The loader's working status is now False. (True: Working, False: Idle).
