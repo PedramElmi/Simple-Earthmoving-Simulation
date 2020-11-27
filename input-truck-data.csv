@@ -1,0 +1,4 @@
+ID, loading duration,hauling duration,dumping duration,returning duration,status
+0,10,20,7,15,initiating new cycle
+1,15,30,9,10,loading
+2,9,15,11,5,initiating new cycle
