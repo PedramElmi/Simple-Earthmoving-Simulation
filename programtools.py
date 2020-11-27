@@ -24,8 +24,12 @@ def read_csv_truck_data(csvfilepath: str):
             except:
                 continue
     return data
- 
-        
-        
-        
-        
+
+
+def write_csv(filepath: str, data_list: list):
+    import csv
+    data_list.insert(0,["start", "finish", "ID", "activity"])
+    with open(filepath,'w') as file:
+        for event in data_list:
+            wr = csv.writer(file)
+            wr.writerow(event)

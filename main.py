@@ -1,8 +1,7 @@
 import time
 from machine import Loader
 from machine import Truck
-from programtools import Time
-from programtools import read_csv_truck_data
+from programtools import Time, write_csv, read_csv_truck_data
 
 # Create the main simulation time and branch simulation time
 branch = Time("branch")
@@ -19,7 +18,9 @@ for info in truck_data:
         loading_dur=info[1],
         hauling_dur=info[2],
         dumping_dur=info[3],
-        returning_dur=info[4], truck_status=info[5], time=simulation)
+        returning_dur=info[4],
+        truck_status=info[5],
+        time=simulation)
     truck_list.append(truck)
 
 # total count of trucks
@@ -41,7 +42,7 @@ with open("output-event-simulation-data.txt", 'w') as txt_file:
     for truck in truck_list:
         write_this = f"{truck.index} Truck ID={truck.id}: Status={truck.status}, " \
                      f"Loading duration= {truck.loading_duration}, Hauling duration= {truck.hauling_duration}, " \
-                     f"Dumping duration= {truck.dumping_duration}, Returning duration= {truck.returning_duration}\n "
+                     f"Dumping duration= {truck.dumping_duration}, Returning duration= {truck.returning_duration}\n"
         txt_file.write(write_this)
 
     # every discrete time in the sim will be stored here
@@ -49,7 +50,7 @@ with open("output-event-simulation-data.txt", 'w') as txt_file:
 
     # a counter for milestones (increasing by 1 every loop)
     discrete_time_counter = 0
-
+    chronological_list = []
     # Main Loop of the simulation for checking and doing EVERY available activity:
     for i in range(15):
 
@@ -61,6 +62,7 @@ with open("output-event-simulation-data.txt", 'w') as txt_file:
         txt_file.write("The loader is or will be available at time {}\n"
                        "The loader's working status is now {}. "
                        "(True: Working, False: Idle).\n".format(the_loader.available_time, the_loader.working))
+
 
         brunch_data = []
         real_data = []
@@ -78,8 +80,7 @@ with open("output-event-simulation-data.txt", 'w') as txt_file:
         # call process method for all of the trucks
         for j in range(quantity_of_trucks):
             if not truck_list[j].working:
-                single_branch_data = truck_list[j].process(
-                    branch, the_loader, txt_file)
+                single_branch_data = truck_list[j].process(branch, the_loader, txt_file)
                 brunch_data.append(single_branch_data)
 
         print(brunch_data)
@@ -87,10 +88,10 @@ with open("output-event-simulation-data.txt", 'w') as txt_file:
         # removing None values
         brunch_data = [k for k in brunch_data if k]
 
-        # Prioritize list based on Early StarIt and Eearly Finish
+        # Prioritize list based on Early StarIt and Early Finish
         brunch_data = sorted(brunch_data, key=lambda k: [k[0], k[1]])
 
-        write_this = "Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):\n" \
+        write_this = "Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):\n" \
                      "[start, finish, ID, current status]\n"
         txt_file.write(write_this)
         for item in brunch_data:
@@ -111,6 +112,8 @@ with open("output-event-simulation-data.txt", 'w') as txt_file:
         txt_file.write(write_this)
         for item in real_data:
             txt_file.write("%s\n" % list(item))
+
+        chronological_list.append(real_data)
 
         print(real_data)
 
@@ -136,3 +139,13 @@ with open("output-event-simulation-data.txt", 'w') as txt_file:
             the_loader.working = False
 
         discrete_time_counter += 1
+
+
+modified_chronological_list = []
+for layer1 in chronological_list:
+    for layer2 in layer1:
+        modified_chronological_list.append(layer2)
+
+print(modified_chronological_list)
+
+write_csv("output-truck-chronological-list.csv",modified_chronological_list)

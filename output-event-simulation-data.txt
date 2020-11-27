@@ -1,13 +1,13 @@
 ********************************************************************************
-2020-11-27 16:02 Iran Standard Time
+2020-11-27 19:55 Iran Standard Time
 Event logs of the program from main.py
 --------------------------------------------------------------------------------
 One loader machine is being created.
 Created truck's list:
 0 Truck ID=0: Status=initiating new cycle, Loading duration= 10, Hauling duration= 20, Dumping duration= 7, Returning duration= 15
- 1 Truck ID=1: Status=initiating new cycle, Loading duration= 15, Hauling duration= 30, Dumping duration= 9, Returning duration= 10
- 2 Truck ID=2: Status=initiating new cycle, Loading duration= 9, Hauling duration= 15, Dumping duration= 11, Returning duration= 5
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+1 Truck ID=1: Status=initiating new cycle, Loading duration= 15, Hauling duration= 30, Dumping duration= 9, Returning duration= 10
+2 Truck ID=2: Status=initiating new cycle, Loading duration= 9, Hauling duration= 15, Dumping duration= 11, Returning duration= 5
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 0
 The loader is or will be available at time 0
 The loader's working status is now False. (True: Working, False: Idle).
@@ -22,7 +22,7 @@ branch Truck 1 started Loading at 0
 branch Truck 1 finished Loading at 15
 branch Truck 2 started Loading at 0
 branch Truck 2 finished Loading at 9
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [0, 9, 2, 'initiating new cycle']
 [0, 10, 0, 'initiating new cycle']
@@ -51,7 +51,7 @@ branch Truck 1 started Loading at 9
 branch Truck 1 finished Loading at 24
 branch Truck 2 started hauling at 9
 branch Truck 2 finished hauling at 18
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [9, 18, 2, 'loading']
 [9, 19, 0, 'initiating new cycle']
@@ -79,7 +79,7 @@ Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 1 stays in the queue. therefore it could not start loading at 18
 branch Truck 2 started dumping at 18
 branch Truck 2 finished dumping at 27
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [18, 27, 2, 'hauling']
 
@@ -102,7 +102,7 @@ branch Truck 0 started hauling at 19
 branch Truck 0 finished hauling at 29
 branch Truck 1 started Loading at 19
 branch Truck 1 finished Loading at 34
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [19, 29, 0, 'loading']
 [19, 34, 1, 'initiating new cycle']
@@ -127,7 +127,7 @@ Truck 2 is at round 1. Its working status:False
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 2 started returning at 27
 branch Truck 2 finished returning at 36
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [27, 36, 2, 'dumping']
 
@@ -148,7 +148,7 @@ Truck 2 is at round 1. Its working status:True
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 0 started dumping at 29
 branch Truck 0 finished dumping at 39
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [29, 39, 0, 'hauling']
 
@@ -169,7 +169,7 @@ Truck 2 is at round 1. Its working status:True
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 1 started hauling at 34
 branch Truck 1 finished hauling at 49
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [34, 49, 1, 'loading']
 
@@ -190,7 +190,7 @@ Truck 2 is at round 1. Its working status:False
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 2 started Loading at 36
 branch Truck 2 finished Loading at 45
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [36, 45, 2, 'initiating new cycle']
 
@@ -211,7 +211,7 @@ Truck 2 is at round 2. Its working status:True
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 0 started returning at 39
 branch Truck 0 finished returning at 49
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [39, 49, 0, 'dumping']
 
@@ -232,7 +232,7 @@ Truck 2 is at round 2. Its working status:False
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 2 started hauling at 45
 branch Truck 2 finished hauling at 54
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [45, 54, 2, 'loading']
 
@@ -255,7 +255,7 @@ branch Truck 0 started Loading at 49
 branch Truck 0 finished Loading at 59
 branch Truck 1 started dumping at 49
 branch Truck 1 finished dumping at 64
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [49, 59, 0, 'initiating new cycle']
 [49, 64, 1, 'hauling']
@@ -282,7 +282,7 @@ branch Truck 0 started hauling at 49
 branch Truck 0 finished hauling at 59
 branch Truck 1 started returning at 49
 branch Truck 1 finished returning at 64
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [49, 59, 0, 'loading']
 [49, 64, 1, 'dumping']
@@ -307,7 +307,7 @@ Truck 2 is at round 2. Its working status:False
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 2 started dumping at 54
 branch Truck 2 finished dumping at 63
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [54, 63, 2, 'hauling']
 
@@ -328,7 +328,7 @@ Truck 2 is at round 2. Its working status:True
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 0 started dumping at 59
 branch Truck 0 finished dumping at 69
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [59, 69, 0, 'hauling']
 
@@ -349,7 +349,7 @@ Truck 2 is at round 2. Its working status:True
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck 0 started returning at 59
 branch Truck 0 finished returning at 69
-Branch Simulation has been compeleted. branch data of trucks (Sorted and Prioritized):
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
 [59, 69, 0, 'dumping']
 
