@@ -1,0 +1,31 @@
+class Time:
+    def __init__(self, time_type) -> None:
+        self.type = time_type
+        self.now = 0
+
+    def add(self, duration):
+        self.now += duration
+        return self.now
+
+    def reset(self, duration):
+        self.now -= duration
+
+
+def read_csv_truck_data(csvfilepath: str):
+    import csv
+    with open(csvfilepath, "r") as csv_file:
+        reader = csv.reader(csv_file, delimiter=",", quotechar='"')
+        data = [row for row in reader]
+    data = data[1:]
+    for index0, first in enumerate(data):
+        for index1, second in enumerate(first):
+            try:
+                data[index0][index1] = eval(second)
+            except:
+                continue
+    return data
+ 
+        
+        
+        
+        
