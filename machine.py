@@ -11,7 +11,8 @@ class Loader:
 class Truck:
     _counter = count(0)
 
-    def __init__(self, truck_id: int, loading_dur: int, hauling_dur: int, dumping_dur: int, returning_dur: int, truck_status: str, time: object):
+    def __init__(self, truck_id: int, loading_dur: int, hauling_dur: int, dumping_dur: int, returning_dur: int,
+                 truck_status: str, time: object):
         self.index = next(self._counter)
         self.id = truck_id
         self.loading_duration = loading_dur
@@ -27,16 +28,18 @@ class Truck:
 
     def process(self, time: object, loader: object, writable_text_file):
 
-        if self.status == "initiating new cycle":
+        if self.status == "returning":
             if not loader.working:
                 if time.type == "simulation":
-                    self.round = self.round +1
+                    self.round = self.round + 1
                 return self.load(time, loader, writable_text_file)
             else:
+                self.starting_activity = time.now
+                self.finishing_activity = time.now + self.loading_duration
                 write_this = "{} Truck {} stays in the queue. therefore it could not start loading at {}".format(
                     time.type, self.id, time.now)
+                # print(write_this)
                 writable_text_file.write(write_this + "\n")
-                pass
 
         elif self.status == "loading":
             return self.haul(time, writable_text_file)
@@ -57,7 +60,7 @@ class Truck:
 
         write_this = "{} Truck {} started Loading at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
 
         start_time = time.now
@@ -65,7 +68,7 @@ class Truck:
 
         write_this = "{} Truck {} finished Loading at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
 
         finish_time = time.now
@@ -84,7 +87,7 @@ class Truck:
 
         write_this = "{} Truck {} started hauling at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
 
         start_time = time.now
@@ -92,7 +95,7 @@ class Truck:
 
         write_this = "{} Truck {} finished hauling at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
 
         finish_time = time.now
@@ -109,14 +112,14 @@ class Truck:
 
         write_this = "{} Truck {} started dumping at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
         start_time = time.now
         time.add(self.loading_duration)
 
         write_this = "{} Truck {} finished dumping at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
 
         finish_time = time.now
@@ -135,7 +138,7 @@ class Truck:
         """
         write_this = "{} Truck {} started returning at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
 
         start_time = time.now
@@ -143,13 +146,13 @@ class Truck:
 
         write_this = "{} Truck {} finished returning at {}".format(
             time.type, self.id, time.now)
-        print(write_this)
+        # print(write_this)
         writable_text_file.write(write_this + "\n")
 
         finish_time = time.now
 
         if time.type == "simulation":
-            self.status = "initiating new cycle"
+            self.status = "returning"
             self.starting_activity = start_time
             self.finishing_activity = finish_time
 
