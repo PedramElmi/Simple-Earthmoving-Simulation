@@ -7,10 +7,10 @@ from programtools import Time, write_csv, read_csv_truck_data
 
 print("This program will read data from: input-truck-data.csv\n"
       "The program currently works with only one Loader (Queue is considered)\n"
-      "Add as many as trucks you want in the input-truck-data.csv file\n"
+      "Add or edit as many as trucks you want in the input-truck-data.csv file\n"
       "Info for input-truck-data.csv:\n"
-      "ID: Truck ID (combination of letters and numbers)\n"
-      "last status: the last thing that the truck have done\n"
+      "ID: Truck ID (free combination of letters and numbers)\n"
+      "last status: the last thing that the truck have or would have been done\n"
       "maximum round: when this round is finished by the truck, the truck will be gone!")
 
 # Create the main simulation time and branch simulation time
