@@ -51,7 +51,7 @@ with open("output-simulation-data.txt", 'w') as txt_file:
     txt_file.write("One loader machine is being created." + "\n")
     txt_file.write("Created truck's list:" + "\n")
     for truck in truck_list:
-        write_this = f"{truck.index} Truck ID={truck.id}: Status={truck.status}, " \
+        write_this = f"{truck.index} Truck ID={truck.id}: Status={truck.status}, Maximum round={truck.maximum_round}, " \
                      f"Loading duration= {truck.loading_duration}, Hauling duration= {truck.hauling_duration}, " \
                      f"Dumping duration= {truck.dumping_duration}, Returning duration= {truck.returning_duration}\n"
         txt_file.write(write_this)
@@ -173,9 +173,9 @@ with open("output-simulation-data.txt", 'w') as txt_file:
         
         
         
-        print(truck_gone_list)
+        # print(truck_gone_list)
         simulation_is_done = not (False in truck_gone_list)
-        print(simulation_is_done)    
+        # print(simulation_is_done)    
 
 
             # print("Truck {} working status: {}".format(
