@@ -1,4 +1,4 @@
-ID, loading duration,hauling duration,dumping duration,returning duration,last status
-Stark,10,20,7,15,returning
-Lannister,15,30,9,10,returning
-Targaryen,9,15,11,5,returning
+ID, loading duration,hauling duration,dumping duration,returning duration,last status,maximum round
+Stark,10,20,7,15,returning,30
+Lannister,15,30,9,10,returning,6
+Targaryen,9,15,11,5,returning,5

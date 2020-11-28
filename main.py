@@ -10,7 +10,8 @@ print("This program will read data from: input-truck-data.csv\n"
       "Add as many as trucks you want in the input-truck-data.csv file\n"
       "Info for input-truck-data.csv:\n"
       "ID: Truck ID (combination of letters and numbers)\n"
-      "last status: the last thing that the truck have done\n")
+      "last status: the last thing that the truck have done\n"
+      "maximum round: when this round is finished by the truck, the truck will be gone!")
 
 # Create the main simulation time and branch simulation time
 branch = Time("branch")
@@ -29,7 +30,8 @@ for info in truck_data:
         dumping_dur=info[3],
         returning_dur=info[4],
         truck_status=info[5],
-        time=simulation)
+        time=simulation,
+        max_round=info[6])
     truck_list.append(truck)
 
 # total count of trucks
@@ -61,7 +63,8 @@ with open("output-simulation-data.txt", 'w') as txt_file:
     discrete_time_counter = 0
     chronological_list = []
     # Main Loop of the simulation for checking and doing EVERY available activity:
-    for i in range(50):
+    simulation_is_done = False
+    while not simulation_is_done:
 
         # writing with Discrete Event Simulation logics:
         txt_file.write("- - " * 20 + "\n")
@@ -75,9 +78,13 @@ with open("output-simulation-data.txt", 'w') as txt_file:
         brunch_data = []
         real_data = []
         # write truck's status
-        for j in range(quantity_of_trucks):
-            write_this = "Truck {} is at round {}. Its working status:{}".format(
-                truck_list[j].id, truck_list[j].round, truck_list[j].working)
+        for truck in truck_list:
+            if not truck.gone:
+                write_this = "Truck {} is at round {}. Its working status: {}".format(
+                    truck.id, truck.round, truck.working)
+            else:
+                write_this = "Truck {} is done with the project at its round {}. This truck is gone.".format(
+                    truck.id, truck.round)
             txt_file.write(write_this + "\n")
 
         # reset branch to the main simulation before starting the branch
@@ -87,9 +94,9 @@ with open("output-simulation-data.txt", 'w') as txt_file:
 
         # do a branch simulation of the main simulation for prioritizing and checking doable activities
         # call process method for all of the trucks
-        for j in range(quantity_of_trucks):
-            if not truck_list[j].working:
-                single_branch_data = truck_list[j].process(branch, the_loader, txt_file)
+        for truck in truck_list:
+            if not truck.working:
+                single_branch_data = truck.process(branch, the_loader, txt_file)
                 brunch_data.append(single_branch_data)
 
         # print(brunch_data)
@@ -109,9 +116,14 @@ with open("output-simulation-data.txt", 'w') as txt_file:
 
         write_this = "\nStarting the main Simulation:\n"
         txt_file.write(write_this)
+        
+        
+        # Real Simulation
         for j in brunch_data:
             single_real_data = truck_list[j[2]].process(simulation, the_loader, txt_file)
             real_data.append(single_real_data)
+            
+            
         # print(real_data)
         real_data = [k for k in real_data if k]
 
@@ -142,11 +154,29 @@ with open("output-simulation-data.txt", 'w') as txt_file:
         # print("- - " * 15)
         # print("simulation time is now:", simulation.now)
 
-        for j in range(quantity_of_trucks):
-            if truck_list[j].starting_activity < simulation.now < truck_list[j].finishing_activity:
-                truck_list[j].working = True
+        truck_gone_list = []
+        
+        for truck in truck_list:
+            if truck.starting_activity < simulation.now < truck.finishing_activity:
+                truck.working = True
             else:
-                truck_list[j].working = False
+                truck.working = False
+                
+            if not truck.gone:
+                if truck.status == "returning" and truck.round == truck.maximum_round:
+                    write_this = "Truck {} is done with the project due to its maximum round={}.\n".format(
+                    truck.id, truck.maximum_round)
+                    txt_file.write(write_this)
+                    truck.gone = True
+            
+            truck_gone_list.append(truck.gone)
+        
+        
+        
+        print(truck_gone_list)
+        simulation_is_done = not (False in truck_gone_list)
+        print(simulation_is_done)    
+
 
             # print("Truck {} working status: {}".format(
             #     truck_list[j].id, truck_list[j].working))
@@ -168,6 +198,6 @@ for layer1 in chronological_list:
 
 modified_02_chronological_list = []
 for i in modified_01_chronological_list:
-    modified_02_chronological_list.append((i[0], i[1], truck_list[i[2]].id, i[3]))
+    modified_02_chronological_list.append((i[0], i[1], truck_list[i[2]].id, i[3],i[4]))
 
 write_csv("output-chronological-list-truck.csv", modified_02_chronological_list)

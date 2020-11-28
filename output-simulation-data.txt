@@ -1,5 +1,5 @@
 ********************************************************************************
-2020-11-28 09:03 Iran Standard Time
+2020-11-28 10:08 Iran Standard Time
 Event logs of the program from main.py
 --------------------------------------------------------------------------------
 One loader machine is being created.
@@ -11,9 +11,9 @@ Created truck's list:
 Simulation time is now: 0
 The loader is or will be available at time 0
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 0. Its working status:False
-Truck Lannister is at round 0. Its working status:False
-Truck Targaryen is at round 0. Its working status:False
+Truck Stark is at round 0. Its working status: False
+Truck Lannister is at round 0. Its working status: False
+Truck Targaryen is at round 0. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started Loading at 0
@@ -24,9 +24,9 @@ branch Truck Targaryen started Loading at 0
 branch Truck Targaryen finished Loading at 9
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[0, 9, 2, 'returning']
-[0, 10, 0, 'returning']
-[0, 15, 1, 'returning']
+[0, 9, 2, 'returning', 0]
+[0, 10, 0, 'returning', 0]
+[0, 15, 1, 'returning', 0]
 
 Starting the main Simulation:
 simulation Truck Targaryen started Loading at 0
@@ -35,35 +35,35 @@ simulation Truck Stark stays in the queue. therefore it could not start loading 
 simulation Truck Lannister stays in the queue. therefore it could not start loading at 0
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[0, 9, 2, 'loading']
+[0, 9, 2, 'loading', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 9
 The loader is or will be available at time 9
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 0. Its working status:True
-Truck Lannister is at round 0. Its working status:True
-Truck Targaryen is at round 1. Its working status:False
+Truck Stark is at round 0. Its working status: True
+Truck Lannister is at round 0. Its working status: True
+Truck Targaryen is at round 1. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started hauling at 9
 branch Truck Targaryen finished hauling at 18
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[9, 18, 2, 'loading']
+[9, 18, 2, 'loading', 1]
 
 Starting the main Simulation:
 simulation Truck Targaryen started hauling at 9
 simulation Truck Targaryen finished hauling at 18
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[9, 18, 2, 'hauling']
+[9, 18, 2, 'hauling', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 18
 The loader is or will be available at time 9
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 0. Its working status:False
-Truck Lannister is at round 0. Its working status:False
-Truck Targaryen is at round 1. Its working status:False
+Truck Stark is at round 0. Its working status: False
+Truck Lannister is at round 0. Its working status: False
+Truck Targaryen is at round 1. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started Loading at 18
@@ -74,9 +74,9 @@ branch Truck Targaryen started dumping at 18
 branch Truck Targaryen finished dumping at 27
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[18, 27, 2, 'hauling']
-[18, 28, 0, 'returning']
-[18, 33, 1, 'returning']
+[18, 27, 2, 'hauling', 1]
+[18, 28, 0, 'returning', 0]
+[18, 33, 1, 'returning', 0]
 
 Starting the main Simulation:
 simulation Truck Targaryen started dumping at 18
@@ -86,57 +86,57 @@ simulation Truck Stark finished Loading at 28
 simulation Truck Lannister stays in the queue. therefore it could not start loading at 18
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[18, 27, 2, 'dumping']
-[18, 28, 0, 'loading']
+[18, 27, 2, 'dumping', 1]
+[18, 28, 0, 'loading', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 27
 The loader is or will be available at time 28
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:True
-Truck Lannister is at round 0. Its working status:True
-Truck Targaryen is at round 1. Its working status:False
+Truck Stark is at round 1. Its working status: True
+Truck Lannister is at round 0. Its working status: True
+Truck Targaryen is at round 1. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started returning at 27
 branch Truck Targaryen finished returning at 36
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[27, 36, 2, 'dumping']
+[27, 36, 2, 'dumping', 1]
 
 Starting the main Simulation:
 simulation Truck Targaryen started returning at 27
 simulation Truck Targaryen finished returning at 36
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[27, 36, 2, 'returning']
+[27, 36, 2, 'returning', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 28
 The loader is or will be available at time 28
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:False
-Truck Lannister is at round 0. Its working status:True
-Truck Targaryen is at round 1. Its working status:True
+Truck Stark is at round 1. Its working status: False
+Truck Lannister is at round 0. Its working status: True
+Truck Targaryen is at round 1. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started hauling at 28
 branch Truck Stark finished hauling at 38
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[28, 38, 0, 'loading']
+[28, 38, 0, 'loading', 1]
 
 Starting the main Simulation:
 simulation Truck Stark started hauling at 28
 simulation Truck Stark finished hauling at 38
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[28, 38, 0, 'hauling']
+[28, 38, 0, 'hauling', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 36
 The loader is or will be available at time 28
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:True
-Truck Lannister is at round 0. Its working status:False
-Truck Targaryen is at round 1. Its working status:False
+Truck Stark is at round 1. Its working status: True
+Truck Lannister is at round 0. Its working status: False
+Truck Targaryen is at round 1. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Lannister started Loading at 36
@@ -145,8 +145,8 @@ branch Truck Targaryen started Loading at 36
 branch Truck Targaryen finished Loading at 45
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[36, 45, 2, 'returning']
-[36, 51, 1, 'returning']
+[36, 45, 2, 'returning', 1]
+[36, 51, 1, 'returning', 0]
 
 Starting the main Simulation:
 simulation Truck Targaryen started Loading at 36
@@ -154,77 +154,77 @@ simulation Truck Targaryen finished Loading at 45
 simulation Truck Lannister stays in the queue. therefore it could not start loading at 36
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[36, 45, 2, 'loading']
+[36, 45, 2, 'loading', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 38
 The loader is or will be available at time 45
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:False
-Truck Lannister is at round 0. Its working status:True
-Truck Targaryen is at round 2. Its working status:True
+Truck Stark is at round 1. Its working status: False
+Truck Lannister is at round 0. Its working status: True
+Truck Targaryen is at round 2. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started dumping at 38
 branch Truck Stark finished dumping at 48
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[38, 48, 0, 'hauling']
+[38, 48, 0, 'hauling', 1]
 
 Starting the main Simulation:
 simulation Truck Stark started dumping at 38
 simulation Truck Stark finished dumping at 48
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[38, 48, 0, 'dumping']
+[38, 48, 0, 'dumping', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 45
 The loader is or will be available at time 45
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:True
-Truck Lannister is at round 0. Its working status:True
-Truck Targaryen is at round 2. Its working status:False
+Truck Stark is at round 1. Its working status: True
+Truck Lannister is at round 0. Its working status: True
+Truck Targaryen is at round 2. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started hauling at 45
 branch Truck Targaryen finished hauling at 54
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[45, 54, 2, 'loading']
+[45, 54, 2, 'loading', 2]
 
 Starting the main Simulation:
 simulation Truck Targaryen started hauling at 45
 simulation Truck Targaryen finished hauling at 54
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[45, 54, 2, 'hauling']
+[45, 54, 2, 'hauling', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 48
 The loader is or will be available at time 45
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:False
-Truck Lannister is at round 0. Its working status:True
-Truck Targaryen is at round 2. Its working status:True
+Truck Stark is at round 1. Its working status: False
+Truck Lannister is at round 0. Its working status: True
+Truck Targaryen is at round 2. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started returning at 48
 branch Truck Stark finished returning at 58
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[48, 58, 0, 'dumping']
+[48, 58, 0, 'dumping', 1]
 
 Starting the main Simulation:
 simulation Truck Stark started returning at 48
 simulation Truck Stark finished returning at 58
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[48, 58, 0, 'returning']
+[48, 58, 0, 'returning', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 54
 The loader is or will be available at time 45
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:True
-Truck Lannister is at round 0. Its working status:False
-Truck Targaryen is at round 2. Its working status:False
+Truck Stark is at round 1. Its working status: True
+Truck Lannister is at round 0. Its working status: False
+Truck Targaryen is at round 2. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Lannister started Loading at 54
@@ -233,8 +233,8 @@ branch Truck Targaryen started dumping at 54
 branch Truck Targaryen finished dumping at 63
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[54, 63, 2, 'hauling']
-[54, 69, 1, 'returning']
+[54, 63, 2, 'hauling', 2]
+[54, 69, 1, 'returning', 0]
 
 Starting the main Simulation:
 simulation Truck Targaryen started dumping at 54
@@ -243,15 +243,15 @@ simulation Truck Lannister started Loading at 54
 simulation Truck Lannister finished Loading at 69
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[54, 63, 2, 'dumping']
-[54, 69, 1, 'loading']
+[54, 63, 2, 'dumping', 2]
+[54, 69, 1, 'loading', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 58
 The loader is or will be available at time 69
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:False
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 2. Its working status:True
+Truck Stark is at round 1. Its working status: False
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 2. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark stays in the queue. therefore it could not start loading at 58
@@ -265,30 +265,30 @@ The main simulation is done. started truck's activities are:
 Simulation time is now: 63
 The loader is or will be available at time 69
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:True
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 2. Its working status:False
+Truck Stark is at round 1. Its working status: True
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 2. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started returning at 63
 branch Truck Targaryen finished returning at 72
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[63, 72, 2, 'dumping']
+[63, 72, 2, 'dumping', 2]
 
 Starting the main Simulation:
 simulation Truck Targaryen started returning at 63
 simulation Truck Targaryen finished returning at 72
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[63, 72, 2, 'returning']
+[63, 72, 2, 'returning', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 69
 The loader is or will be available at time 69
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 1. Its working status:False
-Truck Lannister is at round 1. Its working status:False
-Truck Targaryen is at round 2. Its working status:True
+Truck Stark is at round 1. Its working status: False
+Truck Lannister is at round 1. Its working status: False
+Truck Targaryen is at round 2. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started Loading at 69
@@ -297,8 +297,8 @@ branch Truck Lannister started hauling at 69
 branch Truck Lannister finished hauling at 84
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[69, 79, 0, 'returning']
-[69, 84, 1, 'loading']
+[69, 79, 0, 'returning', 1]
+[69, 84, 1, 'loading', 1]
 
 Starting the main Simulation:
 simulation Truck Stark started Loading at 69
@@ -307,15 +307,15 @@ simulation Truck Lannister started hauling at 69
 simulation Truck Lannister finished hauling at 84
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[69, 79, 0, 'loading']
-[69, 84, 1, 'hauling']
+[69, 79, 0, 'loading', 2]
+[69, 84, 1, 'hauling', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 72
 The loader is or will be available at time 79
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:True
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 2. Its working status:False
+Truck Stark is at round 2. Its working status: True
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 2. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen stays in the queue. therefore it could not start loading at 72
@@ -329,30 +329,30 @@ The main simulation is done. started truck's activities are:
 Simulation time is now: 79
 The loader is or will be available at time 79
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:False
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 2. Its working status:True
+Truck Stark is at round 2. Its working status: False
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 2. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started hauling at 79
 branch Truck Stark finished hauling at 89
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[79, 89, 0, 'loading']
+[79, 89, 0, 'loading', 2]
 
 Starting the main Simulation:
 simulation Truck Stark started hauling at 79
 simulation Truck Stark finished hauling at 89
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[79, 89, 0, 'hauling']
+[79, 89, 0, 'hauling', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 84
 The loader is or will be available at time 79
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:True
-Truck Lannister is at round 1. Its working status:False
-Truck Targaryen is at round 2. Its working status:False
+Truck Stark is at round 2. Its working status: True
+Truck Lannister is at round 1. Its working status: False
+Truck Targaryen is at round 2. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Lannister started dumping at 84
@@ -361,8 +361,8 @@ branch Truck Targaryen started Loading at 84
 branch Truck Targaryen finished Loading at 93
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[84, 93, 2, 'returning']
-[84, 99, 1, 'hauling']
+[84, 93, 2, 'returning', 2]
+[84, 99, 1, 'hauling', 1]
 
 Starting the main Simulation:
 simulation Truck Targaryen started Loading at 84
@@ -371,57 +371,57 @@ simulation Truck Lannister started dumping at 84
 simulation Truck Lannister finished dumping at 99
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[84, 93, 2, 'loading']
-[84, 99, 1, 'dumping']
+[84, 93, 2, 'loading', 3]
+[84, 99, 1, 'dumping', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 89
 The loader is or will be available at time 93
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:False
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 3. Its working status:True
+Truck Stark is at round 2. Its working status: False
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 3. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started dumping at 89
 branch Truck Stark finished dumping at 99
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[89, 99, 0, 'hauling']
+[89, 99, 0, 'hauling', 2]
 
 Starting the main Simulation:
 simulation Truck Stark started dumping at 89
 simulation Truck Stark finished dumping at 99
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[89, 99, 0, 'dumping']
+[89, 99, 0, 'dumping', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 93
 The loader is or will be available at time 93
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:True
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 3. Its working status:False
+Truck Stark is at round 2. Its working status: True
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 3. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started hauling at 93
 branch Truck Targaryen finished hauling at 102
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[93, 102, 2, 'loading']
+[93, 102, 2, 'loading', 3]
 
 Starting the main Simulation:
 simulation Truck Targaryen started hauling at 93
 simulation Truck Targaryen finished hauling at 102
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[93, 102, 2, 'hauling']
+[93, 102, 2, 'hauling', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 99
 The loader is or will be available at time 93
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:False
-Truck Lannister is at round 1. Its working status:False
-Truck Targaryen is at round 3. Its working status:True
+Truck Stark is at round 2. Its working status: False
+Truck Lannister is at round 1. Its working status: False
+Truck Targaryen is at round 3. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started returning at 99
@@ -430,8 +430,8 @@ branch Truck Lannister started returning at 99
 branch Truck Lannister finished returning at 114
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[99, 109, 0, 'dumping']
-[99, 114, 1, 'dumping']
+[99, 109, 0, 'dumping', 2]
+[99, 114, 1, 'dumping', 1]
 
 Starting the main Simulation:
 simulation Truck Stark started returning at 99
@@ -440,78 +440,78 @@ simulation Truck Lannister started returning at 99
 simulation Truck Lannister finished returning at 114
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[99, 109, 0, 'returning']
-[99, 114, 1, 'returning']
+[99, 109, 0, 'returning', 2]
+[99, 114, 1, 'returning', 1]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 102
 The loader is or will be available at time 93
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:True
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 3. Its working status:False
+Truck Stark is at round 2. Its working status: True
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 3. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started dumping at 102
 branch Truck Targaryen finished dumping at 111
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[102, 111, 2, 'hauling']
+[102, 111, 2, 'hauling', 3]
 
 Starting the main Simulation:
 simulation Truck Targaryen started dumping at 102
 simulation Truck Targaryen finished dumping at 111
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[102, 111, 2, 'dumping']
+[102, 111, 2, 'dumping', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 109
 The loader is or will be available at time 93
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 2. Its working status:False
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 3. Its working status:True
+Truck Stark is at round 2. Its working status: False
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 3. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started Loading at 109
 branch Truck Stark finished Loading at 119
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[109, 119, 0, 'returning']
+[109, 119, 0, 'returning', 2]
 
 Starting the main Simulation:
 simulation Truck Stark started Loading at 109
 simulation Truck Stark finished Loading at 119
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[109, 119, 0, 'loading']
+[109, 119, 0, 'loading', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 111
 The loader is or will be available at time 119
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:True
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 3. Its working status:False
+Truck Stark is at round 3. Its working status: True
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 3. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started returning at 111
 branch Truck Targaryen finished returning at 120
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[111, 120, 2, 'dumping']
+[111, 120, 2, 'dumping', 3]
 
 Starting the main Simulation:
 simulation Truck Targaryen started returning at 111
 simulation Truck Targaryen finished returning at 120
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[111, 120, 2, 'returning']
+[111, 120, 2, 'returning', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 114
 The loader is or will be available at time 119
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:True
-Truck Lannister is at round 1. Its working status:False
-Truck Targaryen is at round 3. Its working status:True
+Truck Stark is at round 3. Its working status: True
+Truck Lannister is at round 1. Its working status: False
+Truck Targaryen is at round 3. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Lannister stays in the queue. therefore it could not start loading at 114
@@ -525,51 +525,51 @@ The main simulation is done. started truck's activities are:
 Simulation time is now: 119
 The loader is or will be available at time 119
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:False
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 3. Its working status:True
+Truck Stark is at round 3. Its working status: False
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 3. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started hauling at 119
 branch Truck Stark finished hauling at 129
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[119, 129, 0, 'loading']
+[119, 129, 0, 'loading', 3]
 
 Starting the main Simulation:
 simulation Truck Stark started hauling at 119
 simulation Truck Stark finished hauling at 129
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[119, 129, 0, 'hauling']
+[119, 129, 0, 'hauling', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 120
 The loader is or will be available at time 119
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:True
-Truck Lannister is at round 1. Its working status:True
-Truck Targaryen is at round 3. Its working status:False
+Truck Stark is at round 3. Its working status: True
+Truck Lannister is at round 1. Its working status: True
+Truck Targaryen is at round 3. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started Loading at 120
 branch Truck Targaryen finished Loading at 129
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[120, 129, 2, 'returning']
+[120, 129, 2, 'returning', 3]
 
 Starting the main Simulation:
 simulation Truck Targaryen started Loading at 120
 simulation Truck Targaryen finished Loading at 129
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[120, 129, 2, 'loading']
+[120, 129, 2, 'loading', 4]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 129
 The loader is or will be available at time 129
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:False
-Truck Lannister is at round 1. Its working status:False
-Truck Targaryen is at round 4. Its working status:False
+Truck Stark is at round 3. Its working status: False
+Truck Lannister is at round 1. Its working status: False
+Truck Targaryen is at round 4. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started dumping at 129
@@ -580,9 +580,9 @@ branch Truck Targaryen started hauling at 129
 branch Truck Targaryen finished hauling at 138
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[129, 138, 2, 'loading']
-[129, 139, 0, 'hauling']
-[129, 144, 1, 'returning']
+[129, 138, 2, 'loading', 4]
+[129, 139, 0, 'hauling', 3]
+[129, 144, 1, 'returning', 1]
 
 Starting the main Simulation:
 simulation Truck Targaryen started hauling at 129
@@ -593,121 +593,121 @@ simulation Truck Lannister started Loading at 129
 simulation Truck Lannister finished Loading at 144
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[129, 138, 2, 'hauling']
-[129, 139, 0, 'dumping']
-[129, 144, 1, 'loading']
+[129, 138, 2, 'hauling', 4]
+[129, 139, 0, 'dumping', 3]
+[129, 144, 1, 'loading', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 138
 The loader is or will be available at time 144
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:True
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 4. Its working status:False
+Truck Stark is at round 3. Its working status: True
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 4. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started dumping at 138
 branch Truck Targaryen finished dumping at 147
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[138, 147, 2, 'hauling']
+[138, 147, 2, 'hauling', 4]
 
 Starting the main Simulation:
 simulation Truck Targaryen started dumping at 138
 simulation Truck Targaryen finished dumping at 147
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[138, 147, 2, 'dumping']
+[138, 147, 2, 'dumping', 4]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 139
 The loader is or will be available at time 144
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:False
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 4. Its working status:True
+Truck Stark is at round 3. Its working status: False
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 4. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started returning at 139
 branch Truck Stark finished returning at 149
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[139, 149, 0, 'dumping']
+[139, 149, 0, 'dumping', 3]
 
 Starting the main Simulation:
 simulation Truck Stark started returning at 139
 simulation Truck Stark finished returning at 149
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[139, 149, 0, 'returning']
+[139, 149, 0, 'returning', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 144
 The loader is or will be available at time 144
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:True
-Truck Lannister is at round 2. Its working status:False
-Truck Targaryen is at round 4. Its working status:True
+Truck Stark is at round 3. Its working status: True
+Truck Lannister is at round 2. Its working status: False
+Truck Targaryen is at round 4. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Lannister started hauling at 144
 branch Truck Lannister finished hauling at 159
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[144, 159, 1, 'loading']
+[144, 159, 1, 'loading', 2]
 
 Starting the main Simulation:
 simulation Truck Lannister started hauling at 144
 simulation Truck Lannister finished hauling at 159
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[144, 159, 1, 'hauling']
+[144, 159, 1, 'hauling', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 147
 The loader is or will be available at time 144
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:True
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 4. Its working status:False
+Truck Stark is at round 3. Its working status: True
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 4. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started returning at 147
 branch Truck Targaryen finished returning at 156
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[147, 156, 2, 'dumping']
+[147, 156, 2, 'dumping', 4]
 
 Starting the main Simulation:
 simulation Truck Targaryen started returning at 147
 simulation Truck Targaryen finished returning at 156
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[147, 156, 2, 'returning']
+[147, 156, 2, 'returning', 4]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 149
 The loader is or will be available at time 144
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 3. Its working status:False
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 4. Its working status:True
+Truck Stark is at round 3. Its working status: False
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 4. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started Loading at 149
 branch Truck Stark finished Loading at 159
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[149, 159, 0, 'returning']
+[149, 159, 0, 'returning', 3]
 
 Starting the main Simulation:
 simulation Truck Stark started Loading at 149
 simulation Truck Stark finished Loading at 159
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[149, 159, 0, 'loading']
+[149, 159, 0, 'loading', 4]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 156
 The loader is or will be available at time 159
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:True
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 4. Its working status:False
+Truck Stark is at round 4. Its working status: True
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 4. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen stays in the queue. therefore it could not start loading at 156
@@ -721,9 +721,9 @@ The main simulation is done. started truck's activities are:
 Simulation time is now: 159
 The loader is or will be available at time 159
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:False
-Truck Lannister is at round 2. Its working status:False
-Truck Targaryen is at round 4. Its working status:True
+Truck Stark is at round 4. Its working status: False
+Truck Lannister is at round 2. Its working status: False
+Truck Targaryen is at round 4. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started hauling at 159
@@ -732,8 +732,8 @@ branch Truck Lannister started dumping at 159
 branch Truck Lannister finished dumping at 174
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[159, 169, 0, 'loading']
-[159, 174, 1, 'hauling']
+[159, 169, 0, 'loading', 4]
+[159, 174, 1, 'hauling', 2]
 
 Starting the main Simulation:
 simulation Truck Stark started hauling at 159
@@ -742,15 +742,15 @@ simulation Truck Lannister started dumping at 159
 simulation Truck Lannister finished dumping at 174
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[159, 169, 0, 'hauling']
-[159, 174, 1, 'dumping']
+[159, 169, 0, 'hauling', 4]
+[159, 174, 1, 'dumping', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 169
 The loader is or will be available at time 159
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:False
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 4. Its working status:False
+Truck Stark is at round 4. Its working status: False
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 4. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started dumping at 169
@@ -759,8 +759,8 @@ branch Truck Targaryen started Loading at 169
 branch Truck Targaryen finished Loading at 178
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[169, 178, 2, 'returning']
-[169, 179, 0, 'hauling']
+[169, 178, 2, 'returning', 4]
+[169, 179, 0, 'hauling', 4]
 
 Starting the main Simulation:
 simulation Truck Targaryen started Loading at 169
@@ -769,99 +769,99 @@ simulation Truck Stark started dumping at 169
 simulation Truck Stark finished dumping at 179
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[169, 178, 2, 'loading']
-[169, 179, 0, 'dumping']
+[169, 178, 2, 'loading', 5]
+[169, 179, 0, 'dumping', 4]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 174
 The loader is or will be available at time 178
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:True
-Truck Lannister is at round 2. Its working status:False
-Truck Targaryen is at round 5. Its working status:True
+Truck Stark is at round 4. Its working status: True
+Truck Lannister is at round 2. Its working status: False
+Truck Targaryen is at round 5. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Lannister started returning at 174
 branch Truck Lannister finished returning at 189
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[174, 189, 1, 'dumping']
+[174, 189, 1, 'dumping', 2]
 
 Starting the main Simulation:
 simulation Truck Lannister started returning at 174
 simulation Truck Lannister finished returning at 189
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[174, 189, 1, 'returning']
+[174, 189, 1, 'returning', 2]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 178
 The loader is or will be available at time 178
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:True
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 5. Its working status:False
+Truck Stark is at round 4. Its working status: True
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 5. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started hauling at 178
 branch Truck Targaryen finished hauling at 187
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[178, 187, 2, 'loading']
+[178, 187, 2, 'loading', 5]
 
 Starting the main Simulation:
 simulation Truck Targaryen started hauling at 178
 simulation Truck Targaryen finished hauling at 187
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[178, 187, 2, 'hauling']
+[178, 187, 2, 'hauling', 5]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 179
 The loader is or will be available at time 178
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:False
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 5. Its working status:True
+Truck Stark is at round 4. Its working status: False
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 5. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started returning at 179
 branch Truck Stark finished returning at 189
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[179, 189, 0, 'dumping']
+[179, 189, 0, 'dumping', 4]
 
 Starting the main Simulation:
 simulation Truck Stark started returning at 179
 simulation Truck Stark finished returning at 189
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[179, 189, 0, 'returning']
+[179, 189, 0, 'returning', 4]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 187
 The loader is or will be available at time 178
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:True
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 5. Its working status:False
+Truck Stark is at round 4. Its working status: True
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 5. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started dumping at 187
 branch Truck Targaryen finished dumping at 196
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[187, 196, 2, 'hauling']
+[187, 196, 2, 'hauling', 5]
 
 Starting the main Simulation:
 simulation Truck Targaryen started dumping at 187
 simulation Truck Targaryen finished dumping at 196
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[187, 196, 2, 'dumping']
+[187, 196, 2, 'dumping', 5]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 189
 The loader is or will be available at time 178
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 4. Its working status:False
-Truck Lannister is at round 2. Its working status:False
-Truck Targaryen is at round 5. Its working status:True
+Truck Stark is at round 4. Its working status: False
+Truck Lannister is at round 2. Its working status: False
+Truck Targaryen is at round 5. Its working status: True
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started Loading at 189
@@ -870,8 +870,8 @@ branch Truck Lannister started Loading at 189
 branch Truck Lannister finished Loading at 204
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[189, 199, 0, 'returning']
-[189, 204, 1, 'returning']
+[189, 199, 0, 'returning', 4]
+[189, 204, 1, 'returning', 2]
 
 Starting the main Simulation:
 simulation Truck Stark started Loading at 189
@@ -879,244 +879,2473 @@ simulation Truck Stark finished Loading at 199
 simulation Truck Lannister stays in the queue. therefore it could not start loading at 189
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[189, 199, 0, 'loading']
+[189, 199, 0, 'loading', 5]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 196
 The loader is or will be available at time 199
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:True
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 5. Its working status:False
+Truck Stark is at round 5. Its working status: True
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is at round 5. Its working status: False
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Targaryen started returning at 196
 branch Truck Targaryen finished returning at 205
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[196, 205, 2, 'dumping']
+[196, 205, 2, 'dumping', 5]
 
 Starting the main Simulation:
 simulation Truck Targaryen started returning at 196
 simulation Truck Targaryen finished returning at 205
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[196, 205, 2, 'returning']
+[196, 205, 2, 'returning', 5]
+Truck Targaryen is done with the project due to its maximum round=5.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 199
 The loader is or will be available at time 199
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:False
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 5. Its working status:True
+Truck Stark is at round 5. Its working status: False
+Truck Lannister is at round 2. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started hauling at 199
 branch Truck Stark finished hauling at 209
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[199, 209, 0, 'loading']
+[199, 209, 0, 'loading', 5]
 
 Starting the main Simulation:
 simulation Truck Stark started hauling at 199
 simulation Truck Stark finished hauling at 209
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[199, 209, 0, 'hauling']
+[199, 209, 0, 'hauling', 5]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 205
 The loader is or will be available at time 199
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:True
-Truck Lannister is at round 2. Its working status:False
-Truck Targaryen is at round 5. Its working status:False
+Truck Stark is at round 5. Its working status: True
+Truck Lannister is at round 2. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Lannister started Loading at 205
 branch Truck Lannister finished Loading at 220
-branch Truck Targaryen started Loading at 205
-branch Truck Targaryen finished Loading at 214
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[205, 214, 2, 'returning']
-[205, 220, 1, 'returning']
+[205, 220, 1, 'returning', 2]
 
 Starting the main Simulation:
-simulation Truck Targaryen started Loading at 205
-simulation Truck Targaryen finished Loading at 214
-simulation Truck Lannister stays in the queue. therefore it could not start loading at 205
+simulation Truck Lannister started Loading at 205
+simulation Truck Lannister finished Loading at 220
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[205, 214, 2, 'loading']
+[205, 220, 1, 'loading', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 209
-The loader is or will be available at time 214
+The loader is or will be available at time 220
 The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:False
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 6. Its working status:True
+Truck Stark is at round 5. Its working status: False
+Truck Lannister is at round 3. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started dumping at 209
 branch Truck Stark finished dumping at 219
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[209, 219, 0, 'hauling']
+[209, 219, 0, 'hauling', 5]
 
 Starting the main Simulation:
 simulation Truck Stark started dumping at 209
 simulation Truck Stark finished dumping at 219
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[209, 219, 0, 'dumping']
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Simulation time is now: 214
-The loader is or will be available at time 214
-The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:True
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 6. Its working status:False
-
-Starting a branch Simulation for prioritizing and checking doable activities:
-branch Truck Targaryen started hauling at 214
-branch Truck Targaryen finished hauling at 223
-Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
-[start, finish, ID, current status]
-[214, 223, 2, 'loading']
-
-Starting the main Simulation:
-simulation Truck Targaryen started hauling at 214
-simulation Truck Targaryen finished hauling at 223
-The main simulation is done. started truck's activities are:
-[start, finish, ID, current status]
-[214, 223, 2, 'hauling']
+[209, 219, 0, 'dumping', 5]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 219
-The loader is or will be available at time 214
-The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:False
-Truck Lannister is at round 2. Its working status:True
-Truck Targaryen is at round 6. Its working status:True
+The loader is or will be available at time 220
+The loader's working status is now True. (True: Working, False: Idle).
+Truck Stark is at round 5. Its working status: False
+Truck Lannister is at round 3. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
 
 Starting a branch Simulation for prioritizing and checking doable activities:
 branch Truck Stark started returning at 219
 branch Truck Stark finished returning at 229
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[219, 229, 0, 'dumping']
+[219, 229, 0, 'dumping', 5]
 
 Starting the main Simulation:
 simulation Truck Stark started returning at 219
 simulation Truck Stark finished returning at 229
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[219, 229, 0, 'returning']
+[219, 229, 0, 'returning', 5]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Simulation time is now: 223
-The loader is or will be available at time 214
+Simulation time is now: 220
+The loader is or will be available at time 220
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:True
-Truck Lannister is at round 2. Its working status:False
-Truck Targaryen is at round 6. Its working status:False
+Truck Stark is at round 5. Its working status: True
+Truck Lannister is at round 3. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
 
 Starting a branch Simulation for prioritizing and checking doable activities:
-branch Truck Lannister started Loading at 223
-branch Truck Lannister finished Loading at 238
-branch Truck Targaryen started dumping at 223
-branch Truck Targaryen finished dumping at 232
+branch Truck Lannister started hauling at 220
+branch Truck Lannister finished hauling at 235
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[223, 232, 2, 'hauling']
-[223, 238, 1, 'returning']
+[220, 235, 1, 'loading', 3]
 
 Starting the main Simulation:
-simulation Truck Targaryen started dumping at 223
-simulation Truck Targaryen finished dumping at 232
-simulation Truck Lannister started Loading at 223
-simulation Truck Lannister finished Loading at 238
+simulation Truck Lannister started hauling at 220
+simulation Truck Lannister finished hauling at 235
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[223, 232, 2, 'dumping']
-[223, 238, 1, 'loading']
+[220, 235, 1, 'hauling', 3]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Simulation time is now: 229
-The loader is or will be available at time 238
-The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:False
-Truck Lannister is at round 3. Its working status:True
-Truck Targaryen is at round 6. Its working status:True
-
-Starting a branch Simulation for prioritizing and checking doable activities:
-branch Truck Stark stays in the queue. therefore it could not start loading at 229
-Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
-[start, finish, ID, current status]
-
-Starting the main Simulation:
-The main simulation is done. started truck's activities are:
-[start, finish, ID, current status]
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Simulation time is now: 232
-The loader is or will be available at time 238
-The loader's working status is now True. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:True
-Truck Lannister is at round 3. Its working status:True
-Truck Targaryen is at round 6. Its working status:False
-
-Starting a branch Simulation for prioritizing and checking doable activities:
-branch Truck Targaryen started returning at 232
-branch Truck Targaryen finished returning at 241
-Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
-[start, finish, ID, current status]
-[232, 241, 2, 'dumping']
-
-Starting the main Simulation:
-simulation Truck Targaryen started returning at 232
-simulation Truck Targaryen finished returning at 241
-The main simulation is done. started truck's activities are:
-[start, finish, ID, current status]
-[232, 241, 2, 'returning']
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Simulation time is now: 238
-The loader is or will be available at time 238
+The loader is or will be available at time 220
 The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:True
-Truck Lannister is at round 3. Its working status:False
-Truck Targaryen is at round 6. Its working status:True
+Truck Stark is at round 5. Its working status: False
+Truck Lannister is at round 3. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
 
 Starting a branch Simulation for prioritizing and checking doable activities:
-branch Truck Lannister started hauling at 238
-branch Truck Lannister finished hauling at 253
+branch Truck Stark started Loading at 229
+branch Truck Stark finished Loading at 239
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[238, 253, 1, 'loading']
+[229, 239, 0, 'returning', 5]
 
 Starting the main Simulation:
-simulation Truck Lannister started hauling at 238
-simulation Truck Lannister finished hauling at 253
+simulation Truck Stark started Loading at 229
+simulation Truck Stark finished Loading at 239
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[238, 253, 1, 'hauling']
+[229, 239, 0, 'loading', 6]
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Simulation time is now: 241
-The loader is or will be available at time 238
-The loader's working status is now False. (True: Working, False: Idle).
-Truck Stark is at round 5. Its working status:False
-Truck Lannister is at round 3. Its working status:True
-Truck Targaryen is at round 6. Its working status:False
+Simulation time is now: 235
+The loader is or will be available at time 239
+The loader's working status is now True. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: True
+Truck Lannister is at round 3. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
 
 Starting a branch Simulation for prioritizing and checking doable activities:
-branch Truck Stark started Loading at 241
-branch Truck Stark finished Loading at 251
-branch Truck Targaryen started Loading at 241
-branch Truck Targaryen finished Loading at 250
+branch Truck Lannister started dumping at 235
+branch Truck Lannister finished dumping at 250
 Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
 [start, finish, ID, current status]
-[241, 250, 2, 'returning']
-[241, 251, 0, 'returning']
+[235, 250, 1, 'hauling', 3]
 
 Starting the main Simulation:
-simulation Truck Targaryen started Loading at 241
-simulation Truck Targaryen finished Loading at 250
-simulation Truck Stark stays in the queue. therefore it could not start loading at 241
+simulation Truck Lannister started dumping at 235
+simulation Truck Lannister finished dumping at 250
 The main simulation is done. started truck's activities are:
 [start, finish, ID, current status]
-[241, 250, 2, 'loading']
+[235, 250, 1, 'dumping', 3]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 239
+The loader is or will be available at time 239
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: False
+Truck Lannister is at round 3. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 239
+branch Truck Stark finished hauling at 249
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[239, 249, 0, 'loading', 6]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 239
+simulation Truck Stark finished hauling at 249
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[239, 249, 0, 'hauling', 6]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 249
+The loader is or will be available at time 239
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: False
+Truck Lannister is at round 3. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 249
+branch Truck Stark finished dumping at 259
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[249, 259, 0, 'hauling', 6]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 249
+simulation Truck Stark finished dumping at 259
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[249, 259, 0, 'dumping', 6]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 250
+The loader is or will be available at time 239
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: True
+Truck Lannister is at round 3. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister started returning at 250
+branch Truck Lannister finished returning at 265
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[250, 265, 1, 'dumping', 3]
+
+Starting the main Simulation:
+simulation Truck Lannister started returning at 250
+simulation Truck Lannister finished returning at 265
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[250, 265, 1, 'returning', 3]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 259
+The loader is or will be available at time 239
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: False
+Truck Lannister is at round 3. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 259
+branch Truck Stark finished returning at 269
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[259, 269, 0, 'dumping', 6]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 259
+simulation Truck Stark finished returning at 269
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[259, 269, 0, 'returning', 6]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 265
+The loader is or will be available at time 239
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: True
+Truck Lannister is at round 3. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister started Loading at 265
+branch Truck Lannister finished Loading at 280
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[265, 280, 1, 'returning', 3]
+
+Starting the main Simulation:
+simulation Truck Lannister started Loading at 265
+simulation Truck Lannister finished Loading at 280
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[265, 280, 1, 'loading', 4]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 269
+The loader is or will be available at time 280
+The loader's working status is now True. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: False
+Truck Lannister is at round 4. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark stays in the queue. therefore it could not start loading at 269
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+
+Starting the main Simulation:
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 280
+The loader is or will be available at time 280
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 6. Its working status: False
+Truck Lannister is at round 4. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 280
+branch Truck Stark finished Loading at 290
+branch Truck Lannister started hauling at 280
+branch Truck Lannister finished hauling at 295
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[280, 290, 0, 'returning', 6]
+[280, 295, 1, 'loading', 4]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 280
+simulation Truck Stark finished Loading at 290
+simulation Truck Lannister started hauling at 280
+simulation Truck Lannister finished hauling at 295
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[280, 290, 0, 'loading', 7]
+[280, 295, 1, 'hauling', 4]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 290
+The loader is or will be available at time 290
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 7. Its working status: False
+Truck Lannister is at round 4. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 290
+branch Truck Stark finished hauling at 300
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[290, 300, 0, 'loading', 7]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 290
+simulation Truck Stark finished hauling at 300
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[290, 300, 0, 'hauling', 7]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 295
+The loader is or will be available at time 290
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 7. Its working status: True
+Truck Lannister is at round 4. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister started dumping at 295
+branch Truck Lannister finished dumping at 310
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[295, 310, 1, 'hauling', 4]
+
+Starting the main Simulation:
+simulation Truck Lannister started dumping at 295
+simulation Truck Lannister finished dumping at 310
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[295, 310, 1, 'dumping', 4]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 300
+The loader is or will be available at time 290
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 7. Its working status: False
+Truck Lannister is at round 4. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 300
+branch Truck Stark finished dumping at 310
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[300, 310, 0, 'hauling', 7]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 300
+simulation Truck Stark finished dumping at 310
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[300, 310, 0, 'dumping', 7]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 310
+The loader is or will be available at time 290
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 7. Its working status: False
+Truck Lannister is at round 4. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 310
+branch Truck Stark finished returning at 320
+branch Truck Lannister started returning at 310
+branch Truck Lannister finished returning at 325
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[310, 320, 0, 'dumping', 7]
+[310, 325, 1, 'dumping', 4]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 310
+simulation Truck Stark finished returning at 320
+simulation Truck Lannister started returning at 310
+simulation Truck Lannister finished returning at 325
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[310, 320, 0, 'returning', 7]
+[310, 325, 1, 'returning', 4]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 320
+The loader is or will be available at time 290
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 7. Its working status: False
+Truck Lannister is at round 4. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 320
+branch Truck Stark finished Loading at 330
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[320, 330, 0, 'returning', 7]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 320
+simulation Truck Stark finished Loading at 330
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[320, 330, 0, 'loading', 8]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 325
+The loader is or will be available at time 330
+The loader's working status is now True. (True: Working, False: Idle).
+Truck Stark is at round 8. Its working status: True
+Truck Lannister is at round 4. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister stays in the queue. therefore it could not start loading at 325
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+
+Starting the main Simulation:
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 330
+The loader is or will be available at time 330
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 8. Its working status: False
+Truck Lannister is at round 4. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 330
+branch Truck Stark finished hauling at 340
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[330, 340, 0, 'loading', 8]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 330
+simulation Truck Stark finished hauling at 340
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[330, 340, 0, 'hauling', 8]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 340
+The loader is or will be available at time 330
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 8. Its working status: False
+Truck Lannister is at round 4. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 340
+branch Truck Stark finished dumping at 350
+branch Truck Lannister started Loading at 340
+branch Truck Lannister finished Loading at 355
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[340, 350, 0, 'hauling', 8]
+[340, 355, 1, 'returning', 4]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 340
+simulation Truck Stark finished dumping at 350
+simulation Truck Lannister started Loading at 340
+simulation Truck Lannister finished Loading at 355
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[340, 350, 0, 'dumping', 8]
+[340, 355, 1, 'loading', 5]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 350
+The loader is or will be available at time 355
+The loader's working status is now True. (True: Working, False: Idle).
+Truck Stark is at round 8. Its working status: False
+Truck Lannister is at round 5. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 350
+branch Truck Stark finished returning at 360
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[350, 360, 0, 'dumping', 8]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 350
+simulation Truck Stark finished returning at 360
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[350, 360, 0, 'returning', 8]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 355
+The loader is or will be available at time 355
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 8. Its working status: True
+Truck Lannister is at round 5. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister started hauling at 355
+branch Truck Lannister finished hauling at 370
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[355, 370, 1, 'loading', 5]
+
+Starting the main Simulation:
+simulation Truck Lannister started hauling at 355
+simulation Truck Lannister finished hauling at 370
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[355, 370, 1, 'hauling', 5]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 360
+The loader is or will be available at time 355
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 8. Its working status: False
+Truck Lannister is at round 5. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 360
+branch Truck Stark finished Loading at 370
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[360, 370, 0, 'returning', 8]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 360
+simulation Truck Stark finished Loading at 370
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[360, 370, 0, 'loading', 9]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 370
+The loader is or will be available at time 370
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 9. Its working status: False
+Truck Lannister is at round 5. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 370
+branch Truck Stark finished hauling at 380
+branch Truck Lannister started dumping at 370
+branch Truck Lannister finished dumping at 385
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[370, 380, 0, 'loading', 9]
+[370, 385, 1, 'hauling', 5]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 370
+simulation Truck Stark finished hauling at 380
+simulation Truck Lannister started dumping at 370
+simulation Truck Lannister finished dumping at 385
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[370, 380, 0, 'hauling', 9]
+[370, 385, 1, 'dumping', 5]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 380
+The loader is or will be available at time 370
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 9. Its working status: False
+Truck Lannister is at round 5. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 380
+branch Truck Stark finished dumping at 390
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[380, 390, 0, 'hauling', 9]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 380
+simulation Truck Stark finished dumping at 390
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[380, 390, 0, 'dumping', 9]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 385
+The loader is or will be available at time 370
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 9. Its working status: True
+Truck Lannister is at round 5. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister started returning at 385
+branch Truck Lannister finished returning at 400
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[385, 400, 1, 'dumping', 5]
+
+Starting the main Simulation:
+simulation Truck Lannister started returning at 385
+simulation Truck Lannister finished returning at 400
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[385, 400, 1, 'returning', 5]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 390
+The loader is or will be available at time 370
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 9. Its working status: False
+Truck Lannister is at round 5. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 390
+branch Truck Stark finished returning at 400
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[390, 400, 0, 'dumping', 9]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 390
+simulation Truck Stark finished returning at 400
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[390, 400, 0, 'returning', 9]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 400
+The loader is or will be available at time 370
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 9. Its working status: False
+Truck Lannister is at round 5. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 400
+branch Truck Stark finished Loading at 410
+branch Truck Lannister started Loading at 400
+branch Truck Lannister finished Loading at 415
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[400, 410, 0, 'returning', 9]
+[400, 415, 1, 'returning', 5]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 400
+simulation Truck Stark finished Loading at 410
+simulation Truck Lannister stays in the queue. therefore it could not start loading at 400
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[400, 410, 0, 'loading', 10]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 410
+The loader is or will be available at time 410
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 10. Its working status: False
+Truck Lannister is at round 5. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 410
+branch Truck Stark finished hauling at 420
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[410, 420, 0, 'loading', 10]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 410
+simulation Truck Stark finished hauling at 420
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[410, 420, 0, 'hauling', 10]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 420
+The loader is or will be available at time 410
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 10. Its working status: False
+Truck Lannister is at round 5. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 420
+branch Truck Stark finished dumping at 430
+branch Truck Lannister started Loading at 420
+branch Truck Lannister finished Loading at 435
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[420, 430, 0, 'hauling', 10]
+[420, 435, 1, 'returning', 5]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 420
+simulation Truck Stark finished dumping at 430
+simulation Truck Lannister started Loading at 420
+simulation Truck Lannister finished Loading at 435
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[420, 430, 0, 'dumping', 10]
+[420, 435, 1, 'loading', 6]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 430
+The loader is or will be available at time 435
+The loader's working status is now True. (True: Working, False: Idle).
+Truck Stark is at round 10. Its working status: False
+Truck Lannister is at round 6. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 430
+branch Truck Stark finished returning at 440
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[430, 440, 0, 'dumping', 10]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 430
+simulation Truck Stark finished returning at 440
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[430, 440, 0, 'returning', 10]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 435
+The loader is or will be available at time 435
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 10. Its working status: True
+Truck Lannister is at round 6. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister started hauling at 435
+branch Truck Lannister finished hauling at 450
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[435, 450, 1, 'loading', 6]
+
+Starting the main Simulation:
+simulation Truck Lannister started hauling at 435
+simulation Truck Lannister finished hauling at 450
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[435, 450, 1, 'hauling', 6]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 440
+The loader is or will be available at time 435
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 10. Its working status: False
+Truck Lannister is at round 6. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 440
+branch Truck Stark finished Loading at 450
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[440, 450, 0, 'returning', 10]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 440
+simulation Truck Stark finished Loading at 450
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[440, 450, 0, 'loading', 11]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 450
+The loader is or will be available at time 450
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 11. Its working status: False
+Truck Lannister is at round 6. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 450
+branch Truck Stark finished hauling at 460
+branch Truck Lannister started dumping at 450
+branch Truck Lannister finished dumping at 465
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[450, 460, 0, 'loading', 11]
+[450, 465, 1, 'hauling', 6]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 450
+simulation Truck Stark finished hauling at 460
+simulation Truck Lannister started dumping at 450
+simulation Truck Lannister finished dumping at 465
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[450, 460, 0, 'hauling', 11]
+[450, 465, 1, 'dumping', 6]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 460
+The loader is or will be available at time 450
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 11. Its working status: False
+Truck Lannister is at round 6. Its working status: True
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 460
+branch Truck Stark finished dumping at 470
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[460, 470, 0, 'hauling', 11]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 460
+simulation Truck Stark finished dumping at 470
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[460, 470, 0, 'dumping', 11]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 465
+The loader is or will be available at time 450
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 11. Its working status: True
+Truck Lannister is at round 6. Its working status: False
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Lannister started returning at 465
+branch Truck Lannister finished returning at 480
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[465, 480, 1, 'dumping', 6]
+
+Starting the main Simulation:
+simulation Truck Lannister started returning at 465
+simulation Truck Lannister finished returning at 480
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[465, 480, 1, 'returning', 6]
+Truck Lannister is done with the project due to its maximum round=6.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 470
+The loader is or will be available at time 450
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 11. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 470
+branch Truck Stark finished returning at 480
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[470, 480, 0, 'dumping', 11]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 470
+simulation Truck Stark finished returning at 480
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[470, 480, 0, 'returning', 11]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 480
+The loader is or will be available at time 450
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 11. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 480
+branch Truck Stark finished Loading at 490
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[480, 490, 0, 'returning', 11]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 480
+simulation Truck Stark finished Loading at 490
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[480, 490, 0, 'loading', 12]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 490
+The loader is or will be available at time 490
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 12. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 490
+branch Truck Stark finished hauling at 500
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[490, 500, 0, 'loading', 12]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 490
+simulation Truck Stark finished hauling at 500
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[490, 500, 0, 'hauling', 12]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 500
+The loader is or will be available at time 490
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 12. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 500
+branch Truck Stark finished dumping at 510
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[500, 510, 0, 'hauling', 12]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 500
+simulation Truck Stark finished dumping at 510
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[500, 510, 0, 'dumping', 12]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 510
+The loader is or will be available at time 490
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 12. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 510
+branch Truck Stark finished returning at 520
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[510, 520, 0, 'dumping', 12]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 510
+simulation Truck Stark finished returning at 520
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[510, 520, 0, 'returning', 12]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 520
+The loader is or will be available at time 490
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 12. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 520
+branch Truck Stark finished Loading at 530
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[520, 530, 0, 'returning', 12]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 520
+simulation Truck Stark finished Loading at 530
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[520, 530, 0, 'loading', 13]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 530
+The loader is or will be available at time 530
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 13. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 530
+branch Truck Stark finished hauling at 540
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[530, 540, 0, 'loading', 13]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 530
+simulation Truck Stark finished hauling at 540
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[530, 540, 0, 'hauling', 13]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 540
+The loader is or will be available at time 530
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 13. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 540
+branch Truck Stark finished dumping at 550
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[540, 550, 0, 'hauling', 13]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 540
+simulation Truck Stark finished dumping at 550
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[540, 550, 0, 'dumping', 13]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 550
+The loader is or will be available at time 530
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 13. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 550
+branch Truck Stark finished returning at 560
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[550, 560, 0, 'dumping', 13]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 550
+simulation Truck Stark finished returning at 560
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[550, 560, 0, 'returning', 13]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 560
+The loader is or will be available at time 530
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 13. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 560
+branch Truck Stark finished Loading at 570
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[560, 570, 0, 'returning', 13]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 560
+simulation Truck Stark finished Loading at 570
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[560, 570, 0, 'loading', 14]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 570
+The loader is or will be available at time 570
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 14. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 570
+branch Truck Stark finished hauling at 580
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[570, 580, 0, 'loading', 14]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 570
+simulation Truck Stark finished hauling at 580
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[570, 580, 0, 'hauling', 14]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 580
+The loader is or will be available at time 570
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 14. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 580
+branch Truck Stark finished dumping at 590
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[580, 590, 0, 'hauling', 14]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 580
+simulation Truck Stark finished dumping at 590
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[580, 590, 0, 'dumping', 14]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 590
+The loader is or will be available at time 570
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 14. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 590
+branch Truck Stark finished returning at 600
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[590, 600, 0, 'dumping', 14]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 590
+simulation Truck Stark finished returning at 600
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[590, 600, 0, 'returning', 14]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 600
+The loader is or will be available at time 570
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 14. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 600
+branch Truck Stark finished Loading at 610
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[600, 610, 0, 'returning', 14]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 600
+simulation Truck Stark finished Loading at 610
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[600, 610, 0, 'loading', 15]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 610
+The loader is or will be available at time 610
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 15. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 610
+branch Truck Stark finished hauling at 620
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[610, 620, 0, 'loading', 15]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 610
+simulation Truck Stark finished hauling at 620
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[610, 620, 0, 'hauling', 15]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 620
+The loader is or will be available at time 610
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 15. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 620
+branch Truck Stark finished dumping at 630
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[620, 630, 0, 'hauling', 15]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 620
+simulation Truck Stark finished dumping at 630
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[620, 630, 0, 'dumping', 15]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 630
+The loader is or will be available at time 610
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 15. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 630
+branch Truck Stark finished returning at 640
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[630, 640, 0, 'dumping', 15]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 630
+simulation Truck Stark finished returning at 640
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[630, 640, 0, 'returning', 15]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 640
+The loader is or will be available at time 610
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 15. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 640
+branch Truck Stark finished Loading at 650
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[640, 650, 0, 'returning', 15]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 640
+simulation Truck Stark finished Loading at 650
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[640, 650, 0, 'loading', 16]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 650
+The loader is or will be available at time 650
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 16. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 650
+branch Truck Stark finished hauling at 660
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[650, 660, 0, 'loading', 16]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 650
+simulation Truck Stark finished hauling at 660
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[650, 660, 0, 'hauling', 16]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 660
+The loader is or will be available at time 650
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 16. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 660
+branch Truck Stark finished dumping at 670
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[660, 670, 0, 'hauling', 16]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 660
+simulation Truck Stark finished dumping at 670
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[660, 670, 0, 'dumping', 16]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 670
+The loader is or will be available at time 650
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 16. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 670
+branch Truck Stark finished returning at 680
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[670, 680, 0, 'dumping', 16]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 670
+simulation Truck Stark finished returning at 680
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[670, 680, 0, 'returning', 16]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 680
+The loader is or will be available at time 650
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 16. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 680
+branch Truck Stark finished Loading at 690
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[680, 690, 0, 'returning', 16]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 680
+simulation Truck Stark finished Loading at 690
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[680, 690, 0, 'loading', 17]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 690
+The loader is or will be available at time 690
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 17. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 690
+branch Truck Stark finished hauling at 700
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[690, 700, 0, 'loading', 17]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 690
+simulation Truck Stark finished hauling at 700
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[690, 700, 0, 'hauling', 17]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 700
+The loader is or will be available at time 690
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 17. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 700
+branch Truck Stark finished dumping at 710
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[700, 710, 0, 'hauling', 17]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 700
+simulation Truck Stark finished dumping at 710
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[700, 710, 0, 'dumping', 17]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 710
+The loader is or will be available at time 690
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 17. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 710
+branch Truck Stark finished returning at 720
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[710, 720, 0, 'dumping', 17]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 710
+simulation Truck Stark finished returning at 720
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[710, 720, 0, 'returning', 17]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 720
+The loader is or will be available at time 690
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 17. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 720
+branch Truck Stark finished Loading at 730
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[720, 730, 0, 'returning', 17]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 720
+simulation Truck Stark finished Loading at 730
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[720, 730, 0, 'loading', 18]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 730
+The loader is or will be available at time 730
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 18. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 730
+branch Truck Stark finished hauling at 740
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[730, 740, 0, 'loading', 18]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 730
+simulation Truck Stark finished hauling at 740
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[730, 740, 0, 'hauling', 18]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 740
+The loader is or will be available at time 730
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 18. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 740
+branch Truck Stark finished dumping at 750
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[740, 750, 0, 'hauling', 18]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 740
+simulation Truck Stark finished dumping at 750
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[740, 750, 0, 'dumping', 18]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 750
+The loader is or will be available at time 730
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 18. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 750
+branch Truck Stark finished returning at 760
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[750, 760, 0, 'dumping', 18]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 750
+simulation Truck Stark finished returning at 760
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[750, 760, 0, 'returning', 18]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 760
+The loader is or will be available at time 730
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 18. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 760
+branch Truck Stark finished Loading at 770
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[760, 770, 0, 'returning', 18]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 760
+simulation Truck Stark finished Loading at 770
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[760, 770, 0, 'loading', 19]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 770
+The loader is or will be available at time 770
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 19. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 770
+branch Truck Stark finished hauling at 780
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[770, 780, 0, 'loading', 19]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 770
+simulation Truck Stark finished hauling at 780
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[770, 780, 0, 'hauling', 19]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 780
+The loader is or will be available at time 770
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 19. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 780
+branch Truck Stark finished dumping at 790
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[780, 790, 0, 'hauling', 19]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 780
+simulation Truck Stark finished dumping at 790
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[780, 790, 0, 'dumping', 19]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 790
+The loader is or will be available at time 770
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 19. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 790
+branch Truck Stark finished returning at 800
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[790, 800, 0, 'dumping', 19]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 790
+simulation Truck Stark finished returning at 800
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[790, 800, 0, 'returning', 19]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 800
+The loader is or will be available at time 770
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 19. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 800
+branch Truck Stark finished Loading at 810
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[800, 810, 0, 'returning', 19]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 800
+simulation Truck Stark finished Loading at 810
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[800, 810, 0, 'loading', 20]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 810
+The loader is or will be available at time 810
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 20. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 810
+branch Truck Stark finished hauling at 820
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[810, 820, 0, 'loading', 20]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 810
+simulation Truck Stark finished hauling at 820
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[810, 820, 0, 'hauling', 20]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 820
+The loader is or will be available at time 810
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 20. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 820
+branch Truck Stark finished dumping at 830
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[820, 830, 0, 'hauling', 20]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 820
+simulation Truck Stark finished dumping at 830
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[820, 830, 0, 'dumping', 20]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 830
+The loader is or will be available at time 810
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 20. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 830
+branch Truck Stark finished returning at 840
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[830, 840, 0, 'dumping', 20]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 830
+simulation Truck Stark finished returning at 840
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[830, 840, 0, 'returning', 20]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 840
+The loader is or will be available at time 810
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 20. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 840
+branch Truck Stark finished Loading at 850
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[840, 850, 0, 'returning', 20]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 840
+simulation Truck Stark finished Loading at 850
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[840, 850, 0, 'loading', 21]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 850
+The loader is or will be available at time 850
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 21. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 850
+branch Truck Stark finished hauling at 860
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[850, 860, 0, 'loading', 21]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 850
+simulation Truck Stark finished hauling at 860
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[850, 860, 0, 'hauling', 21]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 860
+The loader is or will be available at time 850
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 21. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 860
+branch Truck Stark finished dumping at 870
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[860, 870, 0, 'hauling', 21]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 860
+simulation Truck Stark finished dumping at 870
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[860, 870, 0, 'dumping', 21]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 870
+The loader is or will be available at time 850
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 21. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 870
+branch Truck Stark finished returning at 880
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[870, 880, 0, 'dumping', 21]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 870
+simulation Truck Stark finished returning at 880
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[870, 880, 0, 'returning', 21]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 880
+The loader is or will be available at time 850
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 21. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 880
+branch Truck Stark finished Loading at 890
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[880, 890, 0, 'returning', 21]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 880
+simulation Truck Stark finished Loading at 890
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[880, 890, 0, 'loading', 22]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 890
+The loader is or will be available at time 890
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 22. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 890
+branch Truck Stark finished hauling at 900
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[890, 900, 0, 'loading', 22]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 890
+simulation Truck Stark finished hauling at 900
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[890, 900, 0, 'hauling', 22]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 900
+The loader is or will be available at time 890
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 22. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 900
+branch Truck Stark finished dumping at 910
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[900, 910, 0, 'hauling', 22]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 900
+simulation Truck Stark finished dumping at 910
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[900, 910, 0, 'dumping', 22]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 910
+The loader is or will be available at time 890
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 22. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 910
+branch Truck Stark finished returning at 920
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[910, 920, 0, 'dumping', 22]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 910
+simulation Truck Stark finished returning at 920
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[910, 920, 0, 'returning', 22]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 920
+The loader is or will be available at time 890
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 22. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 920
+branch Truck Stark finished Loading at 930
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[920, 930, 0, 'returning', 22]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 920
+simulation Truck Stark finished Loading at 930
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[920, 930, 0, 'loading', 23]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 930
+The loader is or will be available at time 930
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 23. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 930
+branch Truck Stark finished hauling at 940
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[930, 940, 0, 'loading', 23]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 930
+simulation Truck Stark finished hauling at 940
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[930, 940, 0, 'hauling', 23]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 940
+The loader is or will be available at time 930
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 23. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 940
+branch Truck Stark finished dumping at 950
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[940, 950, 0, 'hauling', 23]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 940
+simulation Truck Stark finished dumping at 950
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[940, 950, 0, 'dumping', 23]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 950
+The loader is or will be available at time 930
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 23. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 950
+branch Truck Stark finished returning at 960
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[950, 960, 0, 'dumping', 23]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 950
+simulation Truck Stark finished returning at 960
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[950, 960, 0, 'returning', 23]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 960
+The loader is or will be available at time 930
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 23. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 960
+branch Truck Stark finished Loading at 970
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[960, 970, 0, 'returning', 23]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 960
+simulation Truck Stark finished Loading at 970
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[960, 970, 0, 'loading', 24]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 970
+The loader is or will be available at time 970
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 24. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 970
+branch Truck Stark finished hauling at 980
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[970, 980, 0, 'loading', 24]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 970
+simulation Truck Stark finished hauling at 980
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[970, 980, 0, 'hauling', 24]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 980
+The loader is or will be available at time 970
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 24. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 980
+branch Truck Stark finished dumping at 990
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[980, 990, 0, 'hauling', 24]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 980
+simulation Truck Stark finished dumping at 990
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[980, 990, 0, 'dumping', 24]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 990
+The loader is or will be available at time 970
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 24. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 990
+branch Truck Stark finished returning at 1000
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[990, 1000, 0, 'dumping', 24]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 990
+simulation Truck Stark finished returning at 1000
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[990, 1000, 0, 'returning', 24]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1000
+The loader is or will be available at time 970
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 24. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 1000
+branch Truck Stark finished Loading at 1010
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1000, 1010, 0, 'returning', 24]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 1000
+simulation Truck Stark finished Loading at 1010
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1000, 1010, 0, 'loading', 25]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1010
+The loader is or will be available at time 1010
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 25. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 1010
+branch Truck Stark finished hauling at 1020
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1010, 1020, 0, 'loading', 25]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 1010
+simulation Truck Stark finished hauling at 1020
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1010, 1020, 0, 'hauling', 25]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1020
+The loader is or will be available at time 1010
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 25. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 1020
+branch Truck Stark finished dumping at 1030
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1020, 1030, 0, 'hauling', 25]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 1020
+simulation Truck Stark finished dumping at 1030
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1020, 1030, 0, 'dumping', 25]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1030
+The loader is or will be available at time 1010
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 25. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 1030
+branch Truck Stark finished returning at 1040
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1030, 1040, 0, 'dumping', 25]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 1030
+simulation Truck Stark finished returning at 1040
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1030, 1040, 0, 'returning', 25]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1040
+The loader is or will be available at time 1010
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 25. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 1040
+branch Truck Stark finished Loading at 1050
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1040, 1050, 0, 'returning', 25]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 1040
+simulation Truck Stark finished Loading at 1050
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1040, 1050, 0, 'loading', 26]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1050
+The loader is or will be available at time 1050
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 26. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 1050
+branch Truck Stark finished hauling at 1060
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1050, 1060, 0, 'loading', 26]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 1050
+simulation Truck Stark finished hauling at 1060
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1050, 1060, 0, 'hauling', 26]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1060
+The loader is or will be available at time 1050
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 26. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 1060
+branch Truck Stark finished dumping at 1070
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1060, 1070, 0, 'hauling', 26]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 1060
+simulation Truck Stark finished dumping at 1070
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1060, 1070, 0, 'dumping', 26]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1070
+The loader is or will be available at time 1050
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 26. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 1070
+branch Truck Stark finished returning at 1080
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1070, 1080, 0, 'dumping', 26]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 1070
+simulation Truck Stark finished returning at 1080
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1070, 1080, 0, 'returning', 26]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1080
+The loader is or will be available at time 1050
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 26. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 1080
+branch Truck Stark finished Loading at 1090
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1080, 1090, 0, 'returning', 26]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 1080
+simulation Truck Stark finished Loading at 1090
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1080, 1090, 0, 'loading', 27]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1090
+The loader is or will be available at time 1090
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 27. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 1090
+branch Truck Stark finished hauling at 1100
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1090, 1100, 0, 'loading', 27]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 1090
+simulation Truck Stark finished hauling at 1100
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1090, 1100, 0, 'hauling', 27]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1100
+The loader is or will be available at time 1090
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 27. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 1100
+branch Truck Stark finished dumping at 1110
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1100, 1110, 0, 'hauling', 27]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 1100
+simulation Truck Stark finished dumping at 1110
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1100, 1110, 0, 'dumping', 27]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1110
+The loader is or will be available at time 1090
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 27. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 1110
+branch Truck Stark finished returning at 1120
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1110, 1120, 0, 'dumping', 27]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 1110
+simulation Truck Stark finished returning at 1120
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1110, 1120, 0, 'returning', 27]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1120
+The loader is or will be available at time 1090
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 27. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 1120
+branch Truck Stark finished Loading at 1130
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1120, 1130, 0, 'returning', 27]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 1120
+simulation Truck Stark finished Loading at 1130
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1120, 1130, 0, 'loading', 28]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1130
+The loader is or will be available at time 1130
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 28. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 1130
+branch Truck Stark finished hauling at 1140
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1130, 1140, 0, 'loading', 28]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 1130
+simulation Truck Stark finished hauling at 1140
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1130, 1140, 0, 'hauling', 28]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1140
+The loader is or will be available at time 1130
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 28. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 1140
+branch Truck Stark finished dumping at 1150
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1140, 1150, 0, 'hauling', 28]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 1140
+simulation Truck Stark finished dumping at 1150
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1140, 1150, 0, 'dumping', 28]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1150
+The loader is or will be available at time 1130
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 28. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 1150
+branch Truck Stark finished returning at 1160
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1150, 1160, 0, 'dumping', 28]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 1150
+simulation Truck Stark finished returning at 1160
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1150, 1160, 0, 'returning', 28]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1160
+The loader is or will be available at time 1130
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 28. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 1160
+branch Truck Stark finished Loading at 1170
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1160, 1170, 0, 'returning', 28]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 1160
+simulation Truck Stark finished Loading at 1170
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1160, 1170, 0, 'loading', 29]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1170
+The loader is or will be available at time 1170
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 29. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 1170
+branch Truck Stark finished hauling at 1180
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1170, 1180, 0, 'loading', 29]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 1170
+simulation Truck Stark finished hauling at 1180
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1170, 1180, 0, 'hauling', 29]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1180
+The loader is or will be available at time 1170
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 29. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 1180
+branch Truck Stark finished dumping at 1190
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1180, 1190, 0, 'hauling', 29]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 1180
+simulation Truck Stark finished dumping at 1190
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1180, 1190, 0, 'dumping', 29]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1190
+The loader is or will be available at time 1170
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 29. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 1190
+branch Truck Stark finished returning at 1200
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1190, 1200, 0, 'dumping', 29]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 1190
+simulation Truck Stark finished returning at 1200
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1190, 1200, 0, 'returning', 29]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1200
+The loader is or will be available at time 1170
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 29. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started Loading at 1200
+branch Truck Stark finished Loading at 1210
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1200, 1210, 0, 'returning', 29]
+
+Starting the main Simulation:
+simulation Truck Stark started Loading at 1200
+simulation Truck Stark finished Loading at 1210
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1200, 1210, 0, 'loading', 30]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1210
+The loader is or will be available at time 1210
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 30. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started hauling at 1210
+branch Truck Stark finished hauling at 1220
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1210, 1220, 0, 'loading', 30]
+
+Starting the main Simulation:
+simulation Truck Stark started hauling at 1210
+simulation Truck Stark finished hauling at 1220
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1210, 1220, 0, 'hauling', 30]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1220
+The loader is or will be available at time 1210
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 30. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started dumping at 1220
+branch Truck Stark finished dumping at 1230
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1220, 1230, 0, 'hauling', 30]
+
+Starting the main Simulation:
+simulation Truck Stark started dumping at 1220
+simulation Truck Stark finished dumping at 1230
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1220, 1230, 0, 'dumping', 30]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Simulation time is now: 1230
+The loader is or will be available at time 1210
+The loader's working status is now False. (True: Working, False: Idle).
+Truck Stark is at round 30. Its working status: False
+Truck Lannister is done with the project at its round 6. This truck is gone.
+Truck Targaryen is done with the project at its round 5. This truck is gone.
+
+Starting a branch Simulation for prioritizing and checking doable activities:
+branch Truck Stark started returning at 1230
+branch Truck Stark finished returning at 1240
+Branch Simulation has been completed. branch data of trucks (Sorted and Prioritized):
+[start, finish, ID, current status]
+[1230, 1240, 0, 'dumping', 30]
+
+Starting the main Simulation:
+simulation Truck Stark started returning at 1230
+simulation Truck Stark finished returning at 1240
+The main simulation is done. started truck's activities are:
+[start, finish, ID, current status]
+[1230, 1240, 0, 'returning', 30]
+Truck Stark is done with the project due to its maximum round=30.
