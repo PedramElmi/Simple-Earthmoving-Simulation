@@ -93,7 +93,7 @@ class Truck:
         writable_text_file.write(write_this + "\n")
 
         start_time = time.now
-        time.add(self.loading_duration)
+        time.add(self.hauling_duration)
 
         write_this = "{} Truck {} finished hauling at {}".format(
             time.type, self.id, time.now)
@@ -107,7 +107,7 @@ class Truck:
             self.starting_activity = start_time
             self.finishing_activity = finish_time
 
-        time.reset(self.loading_duration)
+        time.reset(self.hauling_duration)
         return start_time, finish_time, self.index, self.status, self.round
 
     def dump(self, time: object, writable_text_file):
@@ -117,7 +117,7 @@ class Truck:
         # print(write_this)
         writable_text_file.write(write_this + "\n")
         start_time = time.now
-        time.add(self.loading_duration)
+        time.add(self.dumping_duration)
 
         write_this = "{} Truck {} finished dumping at {}".format(
             time.type, self.id, time.now)
@@ -131,7 +131,7 @@ class Truck:
             self.starting_activity = start_time
             self.finishing_activity = finish_time
 
-        time.reset(self.loading_duration)
+        time.reset(self.dumping_duration)
         return start_time, finish_time, self.index, self.status, self.round
 
     def truck_return(self, time: object, writable_text_file):
@@ -144,7 +144,7 @@ class Truck:
         writable_text_file.write(write_this + "\n")
 
         start_time = time.now
-        time.add(self.loading_duration)
+        time.add(self.returning_duration)
 
         write_this = "{} Truck {} finished returning at {}".format(
             time.type, self.id, time.now)
@@ -158,5 +158,5 @@ class Truck:
             self.starting_activity = start_time
             self.finishing_activity = finish_time
 
-        time.reset(self.loading_duration)
+        time.reset(self.returning_duration)
         return start_time, finish_time, self.index, self.status, self.round
